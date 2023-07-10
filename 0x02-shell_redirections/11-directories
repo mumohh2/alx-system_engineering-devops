@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d ! -path . -print | wc -1
+echo -e '#!/bin/bash \nfind . -type d -not -name '.' | wc -l' >11-directories
